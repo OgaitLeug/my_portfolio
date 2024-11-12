@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfólio</title>
     <!--  CSS   -->
-    <link rel="stylesheet" href="assets/css/style2.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -17,6 +17,8 @@
       href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <!-- Typed -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </head>
   <body>
     <i class="bi bi-list mobile-nav-toggle" id="nav-toggle"></i>
@@ -31,7 +33,7 @@
             target="_blank"
             ><i class="bx bxl-linkedin"></i
           ></a>
-          <a href="https://github.com/coding-tigas" target="_blank"
+          <a href="https://github.com/OgaitLeug" target="_blank"
             ><i class="bx bxl-github"></i
           ></a>
           <a href="https://www.instagram.com/pereiratiago7991/" target="_blank"
@@ -74,7 +76,7 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero">
       <div class="hero-container">
-        <h1>Tiago Pereira</h1>
+        <h2>Tiago Pereira</h2>
         <p>
           I'm
           <span id="type"></span>
@@ -89,11 +91,11 @@
           <div class="section-title">
             <h2>About</h2>
             <p>
-              IT as always been one of my passions for many different reasons.
-              Starting with the fact of how interesting it is to see its
-              evolution based on my living experience. In adition new
-              technologies can provide us the hability to change how we live and
-              think. Besides IT, I am also very sociable and a natural talker.
+              I'm passionate about technology and excited to improve my skills
+              by building creative and functional web applications. In the
+              future, I hope to work in tech, combining my love for
+              problem-solving with my interest in coding. Besides IT, I am also
+              very sociable and a natural talker.
             </p>
           </div>
 
@@ -141,10 +143,6 @@
                   </ul>
                 </div>
               </div>
-              <p>
-                In my free-time, I enjoy exploring my creativity, drawing,
-                painting, surfing, skating and all type of engine with wheels
-              </p>
             </div>
           </div>
         </div>
@@ -298,11 +296,7 @@
       </section>
       <!-- End Contact Section -->
     </main>
-    <a href="#" class="back-to-top" id="back-to-top"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
   </body>
-
   <script>
     // Hide/Show Navbar
     document
@@ -331,24 +325,15 @@
         toggleIcon.classList.remove("bi-x");
       });
     });
-    // Back to top
-    let backtotop = select(".back-to-top");
-    if (backtotop) {
-      const toggleBacktotop = () => {
-        if (window.scrollY > 100) {
-          backtotop.classList.add("active");
-        } else {
-          backtotop.classList.remove("active");
-        }
-      };
-      window.addEventListener("load", toggleBacktotop);
-      onscroll(document, toggleBacktotop);
-    }
     //Typed.js
-    var typed = new Typed("#type", {
-      strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
-      typeSpeed: 50,
-    });
+    var options = {
+      strings: ["Junior-FullStack.", "Learning new Technologies"], // Array de frases
+      typeSpeed: 50, // Typing speed
+      backSpeed: 30, // Backspacing speed
+      backDelay: 1000, // Delay before deleting the text
+      loop: true, // Whether it should keep looping or not
+    };
+
+    var typed = new Typed("#type", options);
   </script>
-  <!-- Typed.js Framework -->
 </html>
