@@ -43,3 +43,10 @@ img.espaco_jogo {
     font-size: 1rem;
   }
 }
+
+@media only screen and (max-width: 390px) {
+  img.espaco_jogo {
+    width: 70px;
+    height: 70px;
+  }
+}
