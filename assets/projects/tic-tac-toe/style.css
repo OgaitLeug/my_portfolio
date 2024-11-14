@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+
+img.espaco_jogo {
+  width: 150px;
+  height: 150px;
+  border: 1px solid gray;
+  margin: 2px;
+  background-color: #25292e;
+}
+
+#win {
+  color: #ffd754;
+  font-size: 3rem;
+  font-weight: bolder;
+  opacity: 0;
+  font-family: "Permanent Marker", cursive;
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+#view_vez {
+  margin-left: 10px;
+  font-size: 2rem;
+}

@@ -12,22 +12,32 @@ body {
 a {
   text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /*--------------------------------------------------------------
  Header
 --------------------------------------------------------------*/
 .header {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   width: 280px;
-
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s, visibility 0s 2s;
   z-index: 9997;
   padding: 0 15px;
   background: #040b14;
   overflow-y: auto;
+}
+/* Class used with js */
+.mobile-nav-active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.6s, visibility 0s 0s;
 }
 .header .profile img {
   margin: 15px auto;
@@ -83,7 +93,8 @@ a {
 }
 @media only screen and (min-width: 1200px) {
   .header {
-    display: block;
+    opacity: 1;
+    visibility: visible;
   }
   #nav-toggle {
     display: none;
@@ -159,10 +170,6 @@ a {
   border-radius: 50px;
   cursor: pointer;
 }
-/* Class used with js */
-.mobile-nav-active {
-  display: block;
-}
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -209,12 +216,12 @@ a {
 }
 
 #hero p span {
-  display: block;
-  font-weight: bolder;
+  font-size: 1rem;
+  display: inline;
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  /* border-bottom: 3px solid #ffb727; */
+  border-bottom: 3px solid #ffb727;
 }
 
 @media only screen and (min-width: 600px) {
@@ -283,6 +290,7 @@ a {
 }
 .img-about {
   width: 300px;
+  transition: transform 2s ease, opacity 2s ease;
 }
 .fst-italic {
   margin-bottom: 15px;
@@ -305,8 +313,7 @@ a {
 @media only screen and (min-width: 700px) {
   .container-about {
     flex-direction: row;
-    /* justify-content: left; */
-    gap: 20px;
+    gap: 150px;
   }
 }
 /*--------------------------------------------------------------

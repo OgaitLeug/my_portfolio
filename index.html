@@ -36,9 +36,9 @@
           <a href="https://github.com/OgaitLeug" target="_blank"
             ><i class="bx bxl-github"></i
           ></a>
-          <a href="https://www.instagram.com/pereiratiago7991/" target="_blank"
+          <!-- <a href="https://www.instagram.com/pereiratiago7991/" target="_blank"
             ><i class="bx bxl-instagram"></i
-          ></a>
+          ></a> -->
         </div>
       </div>
       <!-- ====== NavBar ===== -->
@@ -231,7 +231,9 @@
                 <div class="icon-box">
                   <div class="icon"><i class="bi bi-controller"></i></div>
                   <h4 class="title">
-                    <a href="projects/Galo/galo_game.html" target="_blank"
+                    <a
+                      href="assets/projects/tic-tac-toe/index.html"
+                      target="_blank"
                       >Tic-Tac-Toe</a
                     >
                   </h4>
@@ -241,8 +243,8 @@
               <div>
                 <div class="icon-box">
                   <div class="icon"><i class="bi bi-cone-striped"></i></div>
-                  <h4 class="title"><a href="">Second project</a></h4>
-                  <p class="description">this project is not available</p>
+                  <h4 class="title"><a href="">Login responsive project</a></h4>
+                  <p class="description">Simple Login Page</p>
                 </div>
               </div>
               <div>
@@ -271,7 +273,6 @@
                 <h4>Location:</h4>
                 <p>Portugal, Lisboa</p>
               </div>
-
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
@@ -310,12 +311,11 @@
         toggleIcon.classList.toggle("bi-list");
         toggleIcon.classList.toggle("bi-x");
       });
-
-    // Seleciona todos os links da navbar e adiciona o evento de clique
+    // Event Listener for navbar links
     const navLinks = document.querySelectorAll(".nav-link");
     navLinks.forEach((link) => {
       link.addEventListener("click", function () {
-        // Remove a classe mobile-nav-active para fechar a navbar
+        // Removes mobile-nav-active class to close navbar
         const navbar = document.getElementById("header");
         navbar.classList.remove("mobile-nav-active");
 
