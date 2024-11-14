@@ -30,3 +30,16 @@ img.espaco_jogo {
   margin-left: 10px;
   font-size: 2rem;
 }
+
+@media only screen and (max-width: 500px) {
+  img.espaco_jogo {
+    width: 90px;
+    height: 90px;
+  }
+  #win {
+    font-size: 2rem;
+  }
+  .frase {
+    font-size: 1rem;
+  }
+}
