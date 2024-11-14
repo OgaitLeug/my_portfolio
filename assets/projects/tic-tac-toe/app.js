@@ -61,7 +61,7 @@ function check_vitoria_o() {
     (tabuleiro[3] == 2 && tabuleiro[4] == 2 && tabuleiro[5] == 2) ||
     (tabuleiro[6] == 2 && tabuleiro[7] == 2 && tabuleiro[8] == 2)
   ) {
-    document.getElementById("win").innerText = "Vencedor: O";
+    document.getElementById("win").innerText = "Vencedor : O";
     document.getElementById("win").classList.add("wino");
     frase.parentNode.removeChild(frase);
     document.querySelector("container").classList.add("d-none");
@@ -82,7 +82,7 @@ function check_vitoria_x() {
     (tabuleiro[3] == 1 && tabuleiro[4] == 1 && tabuleiro[5] == 1) ||
     (tabuleiro[6] == 1 && tabuleiro[7] == 1 && tabuleiro[8] == 1)
   ) {
-    document.getElementById("win").innerText = "Vencedor: X";
+    document.getElementById("win").innerText = "Vencedor : X";
     document.getElementById("win").classList.add("winx");
     frase.parentNode.removeChild(frase);
     document.querySelector("container").classList.add("d-none");
