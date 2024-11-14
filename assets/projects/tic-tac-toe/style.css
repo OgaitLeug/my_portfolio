@@ -9,12 +9,16 @@ img.espaco_jogo {
 }
 
 #win {
-  color: #ffd754;
   font-size: 3rem;
   font-weight: bolder;
-  opacity: 0;
   font-family: "Permanent Marker", cursive;
   animation: blinker 1s linear infinite;
+}
+.wino {
+  color: #ffd754;
+}
+.winx {
+  color: #ba412c;
 }
 @keyframes blinker {
   50% {
